@@ -11,8 +11,8 @@ Para visualizar o projeto, basta acessar o seguinte link:
 
 - **Página Principal**: Contém uma breve informação sobre a biblioteca, um carrossel com 3 fotos, horário de funcionamento e localização.
 - **Listar Livros**: Mostra todos os livros disponíveis na biblioteca com filtros de autores e gêneros.
-- **Adicionar Livros**: Permite adicionar novos livros ao acervo.
-- **Eliminar Livros**: Permite remover livros do acervo.
+- **Adicionar Livros**: Permite adicionar novos livros à lista.
+- **Eliminar Livros**: Permite remover livros à lista.
 - **Criar Conta**: Página para registro de novos usuários.
 - **Iniciar Sessão**: Página para login de usuários existentes.
 - **Favoritos**: Página de livros favoritos (ainda não funciona corretamente).
