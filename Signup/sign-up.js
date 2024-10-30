@@ -9,7 +9,7 @@ document.getElementById("register-form").addEventListener("submit", function(eve
 
     // Check if passwords match
     if (password !== confirmPassword) {
-        alert("As senhas não coincidem!"); // Display an error message if passwords don't match
+        alert("As palavras-passe não coincidem!"); // Display an error message if passwords don't match
         return;
     }
 
