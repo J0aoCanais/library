@@ -36,7 +36,7 @@ document.getElementById("register-form").addEventListener("submit", function(eve
     // Save the updated user array back to localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("Cadastro concluído com sucesso!");
+    alert("Conta criada com sucesso!");
 
     window.location.href = "../Login/login.html";
 });
