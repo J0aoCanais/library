@@ -1,0 +1,427 @@
+/* Header styles */
+.greeting-text {
+    color: black; /* Cor do texto */
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", sans-serif; /* Fonte desejada */
+    margin-left: auto; /* Move o elemento para a direita */
+    padding-right: 20px; /* Espaço da borda direita */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Ajusta o dropdown alinhado à direita */
+.ms-auto {
+    margin-left: auto;
+}
+
+/* Estilo da saudação no dropdown */
+.header-text .dropdown-toggle {
+    color: black;
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", sans-serif;
+}
+
+/* Ajuste do cursor e estilo do item de logout */
+.dropdown-menu .dropdown-item {
+    font-size: 1.2rem;
+    font-family: "IBM Plex Serif", sans-serif;
+    cursor: pointer; /* Define o cursor de ponteiro */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(165, 42, 42, 0.1); /* Cor de fundo ao passar o mouse */
+    color: darkred;
+}
+
+
+
+#header {
+    background-color: white; /* Keep header background white */
+    z-index: 1000;
+    position: fixed; /* Keep the header at the top */
+    top: 0; /* Ensure the header is aligned to the top */
+    left: 0; /* Ensure the header is aligned to the left */
+    width: 100%; /* Make sure the header spans the full width */
+    padding: 5% 0; /* Vertical padding for header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+
+.header-text {
+    color: black; /* Keep text color black for contrast */
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", sans-serif;
+}
+
+body {
+    padding-top: 4.5%; /* Ensure body content is not hidden under header */
+}
+.logo {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    padding-left: 3.2%;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.nav-item {
+    margin: 3px 20px;
+    padding: 0;
+}
+
+
+
+.navbar-nav .nav-link.active {
+    background-color: #a52a2a; /* Cor de fundo marrom */
+    color: white;            /* Cor do texto branca */
+    border-radius: 5px;     /* Bordas arredondadas */
+    padding: 15px 15px;     /* Espaçamento interno */
+}
+
+/* Estilo para os links não ativos */
+.navbar-nav .nav-link {
+    color: black;            /* Cor padrão do texto */
+    padding: 15px 15px;     /* Mesmo espaçamento para consistência */
+    text-decoration: none;   /* Remove sublinhado do texto */
+}
+
+
+
+/* Botões Login e Sign-up */
+
+
+.text-end .btn-primary{
+    color: WHITE; /* Keep text color black for contrast */
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", sans-serif;
+    border-color: brown;
+    background-color: brown;
+    border-radius: 5px;     /* Bordas arredondadas */
+    padding: 15px 15px; 
+}
+
+.text-end .btn-outline-primary {
+    color: black; /* Keep text color black for contrast */
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", sans-serif;
+    border-color: brown;
+    border-radius: 5px;     /* Bordas arredondadas */
+    padding: 15px 15px; 
+}
+
+.text-end .btn-outline-primary:hover {
+    background-color: white;
+    
+}
+
+
+@media (min-width: 1700px) {
+    .logo {
+        padding-left: 5%;
+    }
+
+
+    .navbar-nav {
+        flex-grow: 1;
+        padding-left: 16%;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    /* Header styles */
+    #header {
+        
+        padding: 11.75% 0; /* Vertical padding for header */
+    }
+    body {
+        padding-top: 24%;
+    }
+
+    .nav-item {
+        margin: 1px 0;
+    }
+
+    .logo {
+        padding-top: 2%;
+        padding-bottom: 1.5%;
+        padding-left: 2%;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .navbar-brand,
+    .nav-link,
+    .dropdown-item {
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-collapse .nav-link {
+        color: black;
+        padding: 10px 20px;
+        border-bottom: 1px solid #eaeaea;
+        font-size: 110%;
+    }
+
+    .navbar-collapse .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-nav .nav-link.active {  
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+
+    .text-end .btn-primary,
+    .text-end .btn-outline-primary {
+        font-size: 110%; /* Slightly smaller font size for mobile */
+        padding: 10px; /* Equal padding for both buttons */
+        width: 100%; /* Full width buttons */
+        margin: 10px auto; /* Center buttons with margin */
+        
+    }
+    
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+h1 {
+    padding-top: 0%;
+    font-family: "IBM Plex Serif", sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.book-cover img {
+    width: 170px;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+.book-info p {
+    margin-bottom: 3%;
+}
+
+.book-info {
+    font-family: "Alice", serif;
+    font-size:1.5rem
+}
+
+.book-info strong {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .book-info p {
+        margin-bottom: 0%;
+    }
+    .book-cover img {
+        width: 110px;
+        
+    }
+
+    .book-info {
+        font-size:1.2rem
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    body {
+        padding-top: 0%; /* Ensure body content is not hidden under header */
+    }
+    
+}
+
+
+/* Footer */
+#footer {
+    padding-top: 2%; /* Add top padding to the footer section if needed */
+}
+
+.logotipo-footer {
+    padding-left: 4%;
+    padding-top: 0; /* Adjust padding to ensure vertical alignment */
+    display: flex; /* Ensure Flexbox is applied */
+    align-items: center; /* Center align items vertically */
+}
+
+.logos {
+    padding-right: 5%;
+    display: flex; /* Ensure Flexbox is applied */
+    align-items: center; /* Center align items vertically */
+}
+
+.text-body-secondary {
+    font-size: 1.2rem;
+    display: flex; /* Ensure Flexbox is applied */
+    align-items: center; /* Center align text vertically */
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .col-md-4 {
+        text-align: center;
+    }
+    .logos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .logos {
+        flex-wrap: wrap;
+        padding-right: 0%;
+    }
+    .text-body-secondary{
+        font-size: 1.1rem;
+
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos para o container de filtros */
+.filtros {
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%; /* Garante que o elemento utilize toda a largura disponível até o max-width */
+    background-color: #ffffff; /* Cor de fundo principal */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Título e label */
+.filtros .form-label {
+    font-family: "IBM Plex Serif", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Campo de entrada dos filtros */
+.filtros .form-control {
+    font-family: "Alice", serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Botão para aplicar os filtros */
+.filtros .btn-primary {
+    background-color: brown;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "IBM Plex Serif", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtros .btn-primary:hover {
+    background-color: #a52a2a; /* Cor ao passar o mouse */
+}
+
+.filtros .btn-primary:focus {
+    outline: none; /* Remove contorno */
+    box-shadow: 0 0 0 3px rgba(165, 42, 42, 0.3); /* Sombra ao focar */
+}
+
+/* Estilo do botão Remover Filtros */
+.filtros .btn-clear {
+    background-color: white; /* Cor de fundo do botão */
+    color: brown; /* Cor do texto */
+    border: 5px solid brown; /* Borda */
+
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "IBM Plex Serif", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 600px) {
+    .filtros {
+        max-width: 320px;  /* Largura máxima do contêiner */
+        margin: 20px auto; /* Margem superior de 20px e centralização horizontal */
+        padding: 20px;     /* Se necessário, adicione padding para espaçamento interno */
+        background-color: #ffffff; /* Cor de fundo principal */
+        border: 1px solid #ddd; /* Borda */
+        border-radius: 5px; /* Bordas arredondadas */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+    .filtros .btn-primary{
+        margin-bottom: 5%;
+    }
+    
+    .filtros .form-label {
+        text-align: center; /* Centralizando o texto das labels */
+        font-size: 1.1em; /* Tamanho da fonte reduzido */
+    }
+    
+    .filtros .form-control {
+        max-width: 100%; /* Largura máxima para campos de entrada */
+        font-size: 1em; /* Tamanho da fonte */
+        width: 100%; /* Assegurando que os campos ocupem toda a largura */
+    }
+    
+    .filtros .btn-primary, .filtros .btn-clear {
+        font-size: 1em; /* Tamanho da fonte dos botões */
+        width: 100%; /* Botões ocupam toda a largura do container */
+    }
+}
+
+
