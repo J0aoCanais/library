@@ -32,7 +32,7 @@ function displayBooks() {
             <p><strong>Autor:</strong> ${book.author}</p>
             <p><strong>Data de Lançamento:</strong> ${book.release_date}</p>
             <p><strong>Número de Páginas:</strong> ${book.number_of_pages}</p>
-            <p><strong>Gêneros:</strong> ${book.genres}</p>
+            <p><strong>Géneros:</strong> ${book.genres}</p>
         `;
 
         // Botão "Adicionar aos Favoritos" se o usuário estiver logado
